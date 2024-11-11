@@ -24,7 +24,7 @@
             margin: 25px;
         }
 
-        .sfa-body-container {
+        .sfc-body-container {
             min-height: 100vh;
 
             display: flex;
@@ -33,7 +33,7 @@
             justify-content: center;
         }
 
-        .sfa-content-container {
+        .sfc-content-container {
             margin-left: auto;
             margin-right: auto;
 
@@ -43,7 +43,7 @@
             border-radius: 8px;
             padding: 55px 75px 35px 75px;
 
-            border: 1px solid #161f28;
+            border: 2px solid #161f28;
             border-bottom: unset;
             box-shadow: 3px 3px 5px 0px #887f6f;
             -webkit-box-shadow: 3px 3px 5px 0px #887f6f;
@@ -53,88 +53,137 @@
             line-height: 1.3em;
         }
         @media (max-width: 400px) {
-            .sfa-content-container {
+            .sfc-content-container {
                 padding: 30px;
             }
         }
-        .sfa-content-container h1 {
+        .sfc-content-container h1 {
             text-align: center;
+            font-weight: 600;
 
             margin-top: 0px;
             margin-bottom: 0px;
         }
-        .sfa-content-container .sfa-subtitle {
+        .sfc-content-container .sfc-subtitle {
             color: #424242;
             text-align: center;
 
             margin-top: 20px;
             margin-bottom: 30px;
         }
-        .sfa-content-container a {
+        .sfc-content-container a {
             text-decoration: none;
             color: #004ba0;
         }
-        .sfa-content-container a:hover {
+        .sfc-content-container a:hover {
             text-decoration: underline;
             color: #1976d2;
         }
-        .sfa-content-container .sfa-text-emphasis {
+        .sfc-content-container .sfc-text-emphasis {
             font-weight: 600;
         }
-        .sfa-content-container .sfa-text-container {
+        .sfc-content-container .sfc-text-container {
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
-        .sfa-content-container .sfa-text-container .sfa-pipe-spacer {
+        .sfc-content-container .sfc-text-container .sfc-pipe-spacer {
             margin-left: 0.3em;
             margin-right: 0.3em;
         }
-        .sfa-content-container .sfa-text-container a {
+        .sfc-content-container .sfc-text-container a {
             color: #424242;
         }
-        .sfa-content-container .sfa-text-container a:hover {
+        .sfc-content-container .sfc-text-container a:hover {
             color: #212121;
         }
-        .sfa-content-container .sfa-text-container .centered {
+        .sfc-content-container .sfc-text-container .centered {
             text-align: center;
         }
-        .sfa-content-container .sfa-text-container li {
+        .sfc-content-container .sfc-text-container li {
             margin-top: 5px;
         }
-        .sfa-content-container .sfa-text-container li:first-child {
+        .sfc-content-container .sfc-text-container li:first-child {
             margin-top: 0px;
         }
 
-        .sfa-logo-container {
+        .sfc-content-container .sfc-pill-container {
+            display: flex;
+            flex: 0 1 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            margin-top: 25px;
+        }
+        .sfc-content-container .sfc-pill-container a:hover {
+            text-decoration: none;
+        }
+
+        .sfc-content-container .sfc-pill-container .sfc-pill {
+            margin: 5px;
+            padding: 8px 12px;
+            border-radius: 12px;
+            border: 1px #909090 solid;
+
+            background: #cfcac5;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            box-shadow: 1px 1px 2px 0px #e0e0e0;
+            -webkit-box-shadow: 1px 1px 2px 0px #e0e0e0;
+            -moz-box-shadow: 1px 1px 2px 0px #e0e0e0;
+
+        }
+        .sfc-content-container .sfc-pill-container .sfc-pill:hover {
+            background: #cbcbcb;
+        }
+        .sfc-content-container .sfc-pill-container .sfc-pill .sfc-pill-text {
+            font-size: 18px;
+            line-height: 1em;
+            color: #212121;
+        }
+        .sfc-content-container .sfc-pill-container .sfc-pill .sfc-pill-favicon-wrapper {
+            width: 18px;
+            height: 18px;
+
+            margin-right: 5px;
+        }
+        .sfc-content-container .sfc-pill-container .sfc-pill .sfc-pill-favicon-wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sfc-logo-container {
             width: 100%;
 
             display: flex;
             justify-content: center;
         }
-        .sfa-logo-container img {
+        .sfc-logo-container img {
             max-width: 100%;
             max-height: 100%;
         }
 
-        .sfa-footer-container {
+        .sfc-footer-container {
             text-align: center;
             font-size: 0.75em;
             color: #424242;
 
             margin-top: 30px;
         }
-        .sfa-footer-container p {
+        .sfc-footer-container p {
             margin: 0px;
         }
-        .sfa-footer-container a {
+        .sfc-footer-container a {
             color: #424242;
             font-weight: 600;
         }
-        .sfa-footer-container a:hover {
+        .sfc-footer-container a:hover {
             color: #1565C0;
         }
-        .sfa-footer-container hr {
+        .sfc-footer-container hr {
             border: 0;
             height: 0;
             border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -146,22 +195,22 @@
 </head>
 
 <body>
-    <div class="sfa-body-container">
-        <div class="sfa-logo-container">
+    <div class="sfc-body-container">
+        <div class="sfc-logo-container">
             <img src="pridebase24_groupicon_small.jpg" style="border-radius: 35px; margin-bottom: -35px; z-index: 9999;"></img>
         </div>
-        <div class="sfa-content-container">
-            <div class="sfa-text-container">
+        <div class="sfc-content-container">
+            <div class="sfc-text-container">
                 <h1>
                     SydFur Creatives
                 </h1>
-                <div class="sfa-subtitle">
+                <div class="sfc-subtitle">
                     <a href="index.html">
-                        About
+                        About&nbsp;Us
                     </a>
-                    <span class="sfa-pipe-spacer" aria-hidden="true">|</span>
+                    <span class="sfc-pipe-spacer" aria-hidden="true">|</span>
                     <a href="gallery.html">
-                        Directory
+                        Artist&nbsp;Directory
                     </a>
                 </div>
 
@@ -170,7 +219,7 @@
                         Welcome to one of the queerest, furriest slices of the net around! We're an 18+ social group for furry artists, writers & other creatives in and around Sydney, Australia. We meet up monthly to practice our crafts, share & learn&nbsp;together. 
                     </p>
                     <p>
-                        Our community follows a pretty simple set of rules, and if you want to be listed on the directory you'll have to agree to follow&nbsp;them: 
+                        Our community follows a pretty simple set of rules, we expect everyone who attends our meets & who is listed on our directory to follow&nbsp;them: 
                     </p>
                     <ol>
                         <li>
@@ -180,10 +229,22 @@
                             No AI art / writing / etc (if you want that, find a different&nbsp;group) 
                         </li>
                     </ol>
+                    <p>
+                        If that all sounds like fun, then we'd love to have you join us! We welcome anyone from Sydney, Newcastle, Wollongong & surrounds.
+                    </p>
+
+                    <div class="sfc-pill-container">
+                        <a href="https://t.me/+mqAtBIduHhpiN2U1" target="_blank">
+                            <div class="sfc-pill">
+                                <div class="sfc-pill-favicon-wrapper"><img src="telegram_icon.svg" style="display: block;"></div>
+                                <span class="sfc-pill-text">Join on Telegram</span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <div class="sfa-footer-container">
+            <div class="sfc-footer-container">
                 <hr aria-hidden="true">
                 <p>
                     Icon art thanks to a base created by <a href="https://ko-fi.com/growlbeast" target="_blank">Growlbeast</a>
@@ -196,7 +257,7 @@
         function init() {
             $(window).resize(function() {
               // Set body container height to center it
-              $('.sfa-body-container').attr('min-height', window.innerHeight - 50);
+              $('.sfc-body-container').attr('min-height', window.innerHeight - 50);
             });
         }
         init();
