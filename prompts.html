@@ -46,6 +46,7 @@
             padding: 55px 75px 35px 75px;
 
             border: 2px solid #161f28;
+            border-top: 3px solid #161f28;
             border-bottom: unset;
             box-shadow: 3px 3px 5px 0px #887f6f;
             -webkit-box-shadow: 3px 3px 5px 0px #887f6f;
@@ -119,6 +120,9 @@
 
             margin-top: 25px;
         }
+        .sfc-content-container .sfc-pill-container a {
+            text-decoration: none;
+        }
         .sfc-content-container .sfc-pill-container a:hover {
             text-decoration: none;
         }
@@ -170,32 +174,6 @@
             max-height: 100%;
         }
 
-        .sfc-scroll-container {
-            max-height: 350px;
-
-            background-color: black;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            white-space: nowrap;
-            touch-action: pan-x;
-
-            padding: 10px;
-            border-radius: 3px;
-        }
-        .sfc-scroll-container img {
-            height: 320px;
-
-            pointer-events: none;
-
-            margin-left: 5px;
-        }
-        .sfc-scroll-container img:first-child {
-            margin-left: 0px;
-        }
-        .sfc-scroll-container img:last-child {
-            margin-right: 10px;
-        }
-
         .sfc-footer-container {
             text-align: center;
             font-size: 0.75em;
@@ -218,6 +196,50 @@
             height: 0;
             border-top: 1px solid rgba(0, 0, 0, 0.1);
             border-bottom: 1px solid rgba(44, 40, 31, 0.3);
+        }
+
+        .prompt-container {
+            max-width: 380px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            background-color: #c6b5a4;
+            border: 1px solid #a29181;
+            box-shadow: 3px 3px 5px 0px #a29181;
+            -webkit-box-shadow: 3px 3px 5px 0px #a29181;
+            -moz-box-shadow: 3px 3px 5px 0px #a29181;
+        }
+        .prompt-container .prompt-items {
+            display: flex;
+            flex: 1 0 auto;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .prompt-container .prompt-items .prompt-item {
+            width: 160px;
+            height: 80px;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+        }
+        .prompt-container .prompt-items .prompt-item .prompt-label {
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        .prompt-container .prompt-items .prompt-item .prompt-contents .prompt-palette {
+            display: flex;
+            flex: 0 1 auto;
+        }
+        .prompt-container .prompt-items .prompt-item .prompt-contents .prompt-palette .prompt-palette-colour {
+            width: 25px;
+            height: 25px;
         }
     </style>
 
@@ -243,7 +265,64 @@
                 </div>
 
                 <div style="margin-left: auto; margin-right: auto; max-width: 580px;">
-                    Under construction...
+                    <p>
+                        For 2025 we're running the <strong>#SydFurMonthly</strong> prompt competition!
+                    </p>
+                    <p>
+                        Every month an animal, location/setting, verb pair & palette will be provided. Anyone who creates something that uses at least two of the prompts and shares it with the group, will gain a raffle&nbsp;ticket!
+                    </p>
+                    <p>
+                        The raffle will run through the entirety of the year, will be drawn on 1/1/2026, and for fairness each participant can only win a single prize (but submitting multiple works will increase your chances of being drawn)
+                    </p>
+                    <p>
+                        The current prizes&nbsp;are:
+                    </p>
+
+                    <ul>
+                        <li>
+                            4x $20 vouchers to either Eckersleys or Parkers Art&nbsp;Supplies
+                        </li>
+                    </ul>
+
+                    <p>
+                        If that sounds like fun to you, come join us and share your&nbsp;creations!
+                    </p>
+                    <p>
+                        To enter your work into the competition, all you have to do is post it in our Telegram group and tag it with <strong>#SydFurMonthly</strong>
+                    </p>
+
+                    <div class="prompt-container">
+                        <p class="prompt-month" style="margin-bottom: 30px; margin-top: 10px; font-size: 2em; font-weight: 600; text-align: center;">
+                            February
+                        </p>
+                        <div class="prompt-items" style="">
+                            <div class="prompt-item">
+                                <span class="prompt-label">Animal</span>
+                                <div class="prompt-contents">Snake</div>
+                            </div>
+                            <div class="prompt-item">
+                                <span class="prompt-label">Location</span>
+                                <div class="prompt-contents">Coffee shop</div>
+                            </div>
+                            <div class="prompt-item">
+                                <span class="prompt-label">Verbs</span>
+                                <div class="prompt-contents">Adorable, Awkward</div>
+                            </div>
+                            <div class="prompt-item">
+                                <span class="prompt-label">Palette</span>
+                                <div class="prompt-contents">
+                                    <a href="https://lospec.com/palette-list/neo-5" target="_blank"><div class="prompt-palette">
+                                        <div class="prompt-palette-colour" style="background-color: #0e0e0e"></div>
+                                        <div class="prompt-palette-colour" style="background-color: #5433be"></div>
+                                        <div class="prompt-palette-colour" style="background-color: #e624af"></div>
+                                        <div class="prompt-palette-colour" style="background-color: #3df9ea"></div>
+                                        <div class="prompt-palette-colour" style="background-color: #effafa"></div>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
                 </div>
             </div>
 
